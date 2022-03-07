@@ -29,11 +29,40 @@ class DeligramTestApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-
-    )
+    return const FlutterColumnRow();
   }
 }
+
+class FlutterColumnRow extends StatelessWidget {
+  const FlutterColumnRow({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Row(
+          children: const [
+            Text("data"),
+            Text("data2")
+          ],
+        ),
+        Row(
+          children: const [
+            Text("data"),
+            Text("data2")
+          ],
+        ),
+        Row(
+          children: const [
+            Text("data"),
+            Text("data2")
+          ],
+        )
+      ],
+    );
+  }
+}
+
 
 
 
